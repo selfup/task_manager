@@ -4,7 +4,9 @@ Sinatra app that helps manage tasks!
 
 # Setup
 Clone this repo or download the zip
+
 Open up your terminal
+
 cd into the root directory of this project
 
     $ bundle install

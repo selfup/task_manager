@@ -15,4 +15,19 @@ tasks:
 - id: 5
   title: WHOA
   description: BOOTSTRAP
-total: 5
+- id: 6
+  title: Be More Awesome
+  description: Everyday
+- id: 7
+  title: NEW TASK
+  description: WOO
+- id: 8
+  title: Be More Awesome
+  description: Everyday Everyday
+- id: 9
+  title: NEW TASK
+  description: WOO WOW
+- id: 10
+  title: NEW TASK
+  description: "WOO WOW\r\nWOWOWOWOWOWOW"
+total: 10

@@ -1,0 +1,42 @@
+body {
+  background-color: teal;
+}
+
+.jumbotron {
+  background-image: url("/images/bgg.jpg");
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  background-position: center;
+  background-size: cover !important;
+  color: white;
+}
+
+.jumbotron a {
+  text-align: center;
+}
+
+a:link {
+color: white;
+}
+a:visited {
+color: black;
+}
+a:hover {
+color: #FF3300;
+}
+
+input, select, textarea{
+    color: teal;
+}
+
+textarea:focus, input:focus {
+    color: teal;
+}
+
+.form-inline {
+  display: inline;
+}

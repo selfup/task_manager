@@ -2,13 +2,18 @@
 
 <div class="jumbotron">
 <h1>All Tasks</h1>
-
+<br>
 <% @tasks.each do |task| %>
    <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-   <a href="/tasks/<%= task.id %>/edit">Edit</a>
+   <a class="btn btn-success" href="/tasks/<%= task.id %>/edit">Edit</a>
+   <form action="/tasks/<%= task.id %>" method="POST" class="form-inline">
+     <input type="hidden" name="_method" value="DELETE">
+     <input type="submit" value="delete" class="btn btn-danger"/>
+     <br>
+   </form>
 <% end %>
-
-    <h4><a href="/" class="btn btn-primary">Return to Task Manager</a></h4>
+<br>
+    <h4><br><br><a href="/" class="btn btn-primary">Return to Task Manager</a></h4>
 </div>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

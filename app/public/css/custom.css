@@ -22,9 +22,11 @@ body {
 a:link {
 color: white;
 }
+
 a:visited {
 color: black;
 }
+
 a:hover {
 color: #FF3300;
 }

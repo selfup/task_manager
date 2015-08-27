@@ -23,4 +23,23 @@ class UserSeesAllTasksTest < FeatureTest
     save_and_open_page
     assert page.has_content?("Go Home")
   end
+
+  def test_it_can_go_to_the_edit_page
+    visit "/"
+    click_link "New Task"
+    fill_in "task[title]", with: "Go Home"
+    fill_in "task[description]", with: "It has been a long day."
+    click_link_or_button "Submit"
+    assert_equal "/tasks", current_path
+    save_and_open_page
+    assert page.has_content?("Go Home")
+    click_link "Task Index"
+    assert_equal "/tasks", current_path
+    click_link_or_button "Edit"
+    fill_in "task[title]", with: "Go Home"
+    fill_in "task[description]", with: "It has been a long day."
+    assert_equal "/tasks/:id/edit", current_path
+    save_and_open_page
+    assert page.has_content?("Go Home")
+  end
 end

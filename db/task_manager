@@ -1,12 +1,6 @@
 ---
 tasks:
 - id: 1
-  title: This is my first Task
-  description: 'Do this work? '
-- id: 9
-  title: NEW TASK
-  description: WOO WOW
-- id: 11
-  title: This is a new task
-  description: wow
-total: 11
+  title: 'Hey '
+  description: This works!
+total: 1
